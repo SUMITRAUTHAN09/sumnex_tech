@@ -26,12 +26,6 @@ export default function Div2() {
           — Mayank, Startup Founders
         </p>
       </div>
-
-      {/* CONTACT INFO */}
-      <div className="relative z-10 mt-2 sm:mt-3 md:mt-4 lg:mt-6 text-white text-[10px] sm:text-xs md:text-sm space-y-0.5 sm:space-y-1">
-        <p>📧 contact@sumnextech.com</p>
-        <p>📞 +91 9XXXXXXXXX</p>
-      </div>
     </div>
   );
 }
