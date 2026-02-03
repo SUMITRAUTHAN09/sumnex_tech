@@ -42,3 +42,7 @@ body {
 .animate-lineDrop {
   animation: lineDrop 6s linear infinite;
 }
+
+html {
+  scroll-behavior: smooth;
+}

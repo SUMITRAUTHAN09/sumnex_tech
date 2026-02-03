@@ -5,10 +5,10 @@ import Projects from "@/components/projects";
 
 export default function Page() {
   return (
-    <main className="relative min-h-screen w-full bg-gray-300 dark:bg-black overflow-hidden">
+    <main className="relative min-h-screen w-full bg-gray-300 dark:bg-black overflow-x-hidden">
+      {" "}
       {/* BACKGROUND */}
       <BackgroundLines />
-
       {/* CONTENT */}
       <div className="relative z-10">
         <Header />

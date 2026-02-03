@@ -1,5 +1,6 @@
 import { CONSTANTS } from "@/app/constant";
 import Image from "next/image";
+import SumnexTechMarquee from "./SumnexTechMarquee";
 
 export default function About() {
   return (
@@ -12,6 +13,7 @@ export default function About() {
           {CONSTANTS.ABOUT}
         </p>
       </div>
+      <SumnexTechMarquee/>
       <strong>
         <h1 className="text-5xl md:mt-10">Our Team </h1>
       </strong>

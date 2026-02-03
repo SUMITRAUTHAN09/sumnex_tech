@@ -43,13 +43,12 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="w-full flex justify-center items-start lg:items-center mt-12 px-4"
+      className="w-full flex justify-center items-start lg:items-center mt-6 px-4"
     >
       <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-10 gap-4 lg:aspect-[16/9]">
-
         {/* LEFT SECTION */}
         <div className="lg:col-span-7 bg-white rounded-2xl shadow-lg flex items-center p-6 sm:p-10 lg:p-16 shadow-lg shadow-white">
-          <div className="max-w-3xl">      
+          <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-4">
               We Build
             </h1>
@@ -59,13 +58,13 @@ export default function Hero() {
               {devWords.map((word, index) => (
                 <h2
                   key={index}
-                  className={`absolute top-0 left-0 text-4xl sm:text-4xl lg:text-6xl font-bold text-gray-900 transition-all duration-1000 ease-in-out 
+                  className={`absolute top-0 left-0 text-3xl sm:text-4xl lg:text-6xl font-bold text-blue-700 transition-all duration-1000 ease-in-out 
                     ${
                       currentWord === index
                         ? "opacity-100 translate-y-0"
                         : index < currentWord
-                        ? "opacity-0 -translate-y-full"
-                        : "opacity-0 translate-y-full"
+                          ? "opacity-0 -translate-y-full"
+                          : "opacity-0 translate-y-full"
                     }
                   `}
                 >
@@ -75,30 +74,42 @@ export default function Hero() {
             </div>
 
             <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6 leading-relaxed">
-              We are a skilled web development team focused on delivering fast, scalable, and user-centric websites and applications using modern technologies. From concept to deployment, we work closely with clients to transform ideas into reliable, high-impact digital solutions.
+              We are a skilled web development team focused on delivering fast,
+              scalable, and user-centric websites and applications using modern
+              technologies. From concept to deployment, we work closely with
+              clients to transform ideas into reliable, high-impact digital
+              solutions.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <button className="px-6 py-3 bg-black text-white hover:text-black rounded-full font-semibold hover:bg-white transition shadow-lg shadow-black cursor-pointer">
-               <Link href="#contact"> Connect With Us</Link>
+              <button
+                onClick={() => {
+                  document.getElementById("contact")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
+                className="px-6 py-3 bg-black text-white hover:text-black rounded-full font-semibold hover:bg-white transition shadow-lg shadow-black cursor-pointer"
+              >
+                Connect With Us
               </button>
               <button className="px-6 py-3 border-black rounded-full font-semibold hover:bg-black transition text-black hover:text-white shadow-lg shadow-black cursor-pointer">
-              <Link href="/about">  View Portfolio</Link>
+                <Link href="/about"> View Portfolio</Link>
               </button>
             </div>
 
             {/* Stats */}
             <div className="mt-8 flex gap-8">
               <div>
-                <p className="text-2xl font-bold">50+</p>
+                <p className="text-2xl font-bold text-blue-700">5+</p>
                 <p className="text-xs text-gray-600">Projects Completed</p>
               </div>
               <div>
-                <p className="text-2xl font-bold">3+</p>
+                <p className="text-2xl font-bold text-blue-700">1+</p>
                 <p className="text-xs text-gray-600">Years Experience</p>
               </div>
               <div>
-                <p className="text-2xl font-bold">100%</p>
+                <p className="text-2xl font-bold text-blue-700">100%</p>
                 <p className="text-xs text-gray-600">Client Satisfaction</p>
               </div>
             </div>

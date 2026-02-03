@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 
 export default function ContactForm() {
   return (
-    <section id="#contact" className="max-w-6xl mx-auto px-4 py-20">
-      
+    <section id="contact" className="max-w-6xl mx-auto px-4 py-20">
       {/* Heading */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -14,12 +13,10 @@ export default function ContactForm() {
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <h1 className="text-5xl font-bold text-white mb-4">
-          Contact Us
-        </h1>
+        <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
         <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed">
-          Have an idea or looking to build a website? Get in touch with Sumnex Tech
-          and let’s bring your vision to life.
+          Have an idea or looking to build a website? Get in touch with Sumnex
+          Tech and let’s bring your vision to life.
         </p>
       </motion.div>
 
@@ -29,7 +26,7 @@ export default function ContactForm() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="bg-white rounded-2xl p-8 shadow-xl space-y-6"
+        className="bg-gray-800 rounded-2xl p-8 shadow-xl space-y-6"
       >
         {/* Name */}
         <div>
@@ -60,9 +57,7 @@ export default function ContactForm() {
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Inquiry Type
           </label>
-          <select
-            className="w-full border text-gray-600 border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
-          >
+          <select className="w-full border text-gray-600 border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black">
             <option>General Inquiry</option>
             <option>Interested in Website</option>
             <option>Project Idea / Requirement</option>
@@ -85,7 +80,7 @@ export default function ContactForm() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="w-full bg-black text-white py-3 rounded-lg font-semibold tracking-wide hover:bg-gray-900 transition"
+          className="w-full bg-black text-white py-3 rounded-lg font-semibold tracking-wide hover:bg-green-900 transition"
         >
           Submit Inquiry
         </motion.button>

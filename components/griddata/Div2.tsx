@@ -23,7 +23,7 @@ export default function Div2() {
         </p>
 
         <p className="text-[10px] sm:text-xs md:text-sm">
-          — Nimish Agarwal & Sumit Rauthan, Startup Founders
+          — Mayank, Startup Founders
         </p>
       </div>
 

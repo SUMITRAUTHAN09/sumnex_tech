@@ -47,8 +47,8 @@ export default function Div1() {
   }, [charIndex, isDeleting]);
 
   return (
-    <div className="relative w-full min-h-screen p-6 overflow-hidden rounded-lg shadow shadow-lg shadow-red-400">
-
+    <div className="relative w-full h-full p-6 overflow-hidden rounded-lg shadow shadow-lg shadow-red-400">
+ 
       {/* BACKGROUND SLIDER */}
       <Slider startIndex={0}  delay={5000}/>
 
@@ -57,15 +57,15 @@ export default function Div1() {
 
       {/* CONTENT */}
       <div className="relative z-10 max-w-xl text-white">
-        <h1 className="text-4xl font-bold">Welcome to</h1>
-        <h2 className="text-5xl font-bold mt-2">SUMNEX TECH</h2>
+        <h1 className="md:text-4xl font-bold">Welcome to</h1>
+        <h2 className="md:text-5xl font-bold mt-2">SUMNEX TECH</h2>
 
-        <p className="mt-3 text-xl font-medium h-7 text-red-800">
+        <p className="mt-3 md:text-xl font-medium h-7 text-red-800">
           <strong>{typedText}</strong>
           <span className="animate-pulse">|</span>
         </p>
 
-        <p className="text-sm leading-relaxed mt-4">
+        <p className="text-sm leading-relaxed mt-12">
           We are a technology-driven team delivering scalable, secure, and
           high-performance digital solutions to help businesses grow.
         </p>
@@ -77,7 +77,7 @@ export default function Div1() {
           {techWords.map((word, index) => (
             <h2
               key={index}
-              className={`absolute right-0 text-5xl font-bold transition-all duration-1000 ${
+              className={`absolute right-0 md:text-5xl text-xl font-bold transition-all duration-1000 ${
                 currentWord === index
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-full"
