@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="relative min-h-screen w-full bg-gray-300 dark:bg-black overflow-hidden">
       
-      {/* BACKGROUND */}
+      {/* BACKGROUND */} 
       <BackgroundLines />
 
       {/* CONTENT */}
