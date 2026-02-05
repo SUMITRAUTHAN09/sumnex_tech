@@ -1,5 +1,4 @@
 import { CONSTANTS } from "@/app/constant";
-import Image from "next/image";
 import SumnexTechMarquee from "./SumnexTechMarquee";
 
 export default function About() {
@@ -21,6 +20,9 @@ export default function About() {
         {/* fronted developer div*/}
         <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl hover:shadow-white transition mb-10 flex items-center justify-center">
           <div className="mr-20">
+             <h3 className="md:text-4xl font-semibold mb-2 text-gray-800">
+              <strong>Sumit Rauthan</strong>
+            </h3>
             <h3 className="md:text-xl font-semibold mb-2 text-gray-800">
               <strong> Frontend Developer</strong>
             </h3>
@@ -42,38 +44,14 @@ export default function About() {
               </p>
             </strong>
           </div>
-          {/*Image div*/}
-          <div className="w-full">
-            <Image
-              src="/image1.jpg"
-              alt="Frontend Developer"
-              width={100}
-              height={120}
-              className="rounded-4xl object-cover mb-5 h-40"
-            />
-            <h1 className="text-black flex text-sm text-center">
-              <strong> Sumit Rauthan</strong>
-            </h1>
           </div>
-        </div>
 
         {/* backend developer div */}
-        <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl hover:shadow-white transition mb-10 flex items-center justify-center">
-          {/*Image div*/}
-          <div className="w-full md:ml-10">
-            <Image
-              src="/image3.jpg"
-              alt="Frontend Developer"
-              width={100}
-              height={120}
-              className="rounded-4xl object-cover mb-5 h-40 "
-            />
-            <h1 className="text-black flex text-sm text-center">
-              <strong> Nimish Agarwal</strong>
-            </h1>
-          </div>
-          
+        <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl hover:shadow-white transition mb-10 flex items-center justify-center">          
           <div>
+            <h3 className="md:text-4xl font-semibold mb-2 text-gray-800">
+            <strong>Nimish Agarwal</strong>
+          </h3>
           <h3 className="md:text-xl font-semibold mb-2 text-gray-800">
             <strong> Backend Developer</strong>
           </h3>
