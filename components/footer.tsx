@@ -97,8 +97,9 @@ export default function Footer() {
           {/* CONTACT */}
           <div className="flex flex-col space-y-4">
             <h3 className="text-lg font-semibold">Contact</h3>
-            <p className="text-gray-400 text-sm">📧 contact@sumnextech.com</p>
-            <p className="text-gray-400 text-sm">📞 +91 9XXXXXXXXX</p>
+            <p className="text-gray-400 text-sm">📧 sumnextech@gmail.com</p>
+            <p className="text-gray-400 text-sm">📞 +91 9208137401</p>
+            <p className="text-gray-400 text-sm">📞 +91 8864854298</p>
             <p className="text-gray-400 text-sm">🌍 India</p>
           </div>
         </div>
